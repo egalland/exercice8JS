@@ -2,9 +2,9 @@
 function calculAge(){
   // DECLARATION ET RECUPERATION DES VARIABLES
   var age = document.getElementById("age").value;
-  var regex = /^[0-9]+$/;
+  var regex = /^1?[0-9]?[0-9]$/;
   // VERIFICATION DES VARIABLES
-  if(regex.test(age)){
+  if((regex.test(age)) && (age > 0)){
     // VERIFICATION OK -> COMPARAISON AGE MAJEUR
     if(age >= 18){
       alert('Vous êtes majeur');
